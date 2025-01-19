@@ -17,15 +17,15 @@
       td0: tap_dance_0 {
           compatible = "zmk,behavior-tap-dance";
           #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LSHFT>, <&kp LPAR>;
+          tapping-term-ms = <150>;
+          bindings = <&kp J>, <&mt RSHFT J>;
       };
 
       td1: tap_dance_1 {
           compatible = "zmk,behavior-tap-dance";
           #binding-cells = <0>;
           tapping-term-ms = <150>;
-          bindings = <&kp RET>, <&kp RPAR>;
+          bindings = <&kp F>, <&mt LSHFT F>;
       };
     };
 
@@ -43,8 +43,8 @@
         default_layer {
           bindings = <
             &kp TAB        &kp Q      &kp W        &kp E      &kp R         &kp T      &kp Y     &kp U        &kp I         &kp O        &kp P     &kp BSPC
-            &kp ESC        &kp A      &mt LCTRL S  &mt LALT D &mt LSHIFT F  &kp G      &kp H     &mt RSHFT J  &mt RALT K    &mt RCTRL L  &kp SEMI  &kp SQT
-            &td0           &kp Z      &kp X        &kp C      &kp V         &kp B      &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH  &td1   
+            &mt LCTRL ESC  &kp A      &kp S        &kp D      &kp F         &kp G      &kp H     &kp J        &kp K         &kp L        &kp SEMI  &mt RCTRL SQT
+            &kp LSHFT      &kp Z      &kp X        &kp C      &kp V         &kp B      &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH  &mt RSHFT RET
             &kp CAPS       &kp C_MUTE &kp C_PP     &kp LALT   &mo 1         &kp SPACE  &kp LGUI  &mo 2        &kp LEFT      &kp DOWN     &kp UP    &kp RIGHT
           >;
         };
@@ -78,4 +78,3 @@
 
     };
 };
-
