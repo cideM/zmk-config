@@ -31,11 +31,6 @@
         hold-trigger-on-release;
       };
       
-      Let's see if this is better now? First impression is actually really good. I think I am finally on to something. I think it's the balanced behavior that is doing the heavy lifting here.
-      I currently have almost no accidental activations. In fact I have zero. Rather I am finding it a bit hard to actually trigger the home row mods. The trick is that with balanced the other
-      key has to be both pressed and released for it to register. I doubt that I even need the idle ms right now. Let's try some of the weird inputs from the typing test.
-      Indeed typing currentTag is a struggle since getting that upper case T is hard. Not sure if it's because of the idle time or the other.
-
       rh_pht: right_positional_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
