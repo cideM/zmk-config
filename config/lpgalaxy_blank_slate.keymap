@@ -20,6 +20,13 @@
         require-prior-idle-ms = <50>;
         hold-trigger-on-release;
       };
+
+      td0: tap_dance_0 {
+          compatible = "zmk,behavior-tap-dance";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&kp LGUI>, <&kp RET>;
+      };
       
       rh_pht: right_positional_hold_tap {
         compatible = "zmk,behavior-hold-tap";
@@ -54,7 +61,7 @@
             // 24          25             26             27              28               29       | 30       31              32              33             34                35
             &mt LSHFT LPAR &kp Z          &kp X          &kp C           &kp V            &kp B      &kp N    &kp M           &kp COMMA       &kp DOT        &kp FSLH          &mt RSHFT RPAR
             // 36          37             38             39              40               41       | 42       43              44              45             46                47
-            &kp CAPS       &kp C_MUTE     &kp C_PP       &kp LALT        &mo 1            &kp SPACE  &kp LGUI &mo 2           &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
+            &kp CAPS       &kp C_MUTE     &kp C_PP       &kp LALT        &mo 1            &kp SPACE  &td0     &mo 2           &kp LEFT        &kp DOWN       &kp UP            &kp RIGHT
           >;
         };
 
@@ -71,7 +78,7 @@
           bindings = <
               &kp GRAVE &kp N1   &kp N2   &kp N3 &kp N4    &kp N5  &kp N6  &kp N7    &kp N8     &kp N9       &kp N0       &caps_word
               &kp DEL   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F5  &kp F6  &kp MINUS &kp EQUAL  &kp LBKT     &kp RBKT     &kp BSLH
-              &trans    &kp SQT  &kp F8   &kp F9 &kp RET   &kp F11 &kp F12 &kp HASH  &kp BSLH   &kp PG_UP    &kp PG_DN    &trans
+              &trans    &kp SQT  &kp F8   &kp F9 &kp F10   &kp F11 &kp F12 &kp HASH  &kp BSLH   &kp PG_UP    &kp PG_DN    &trans
               &trans    &trans   &trans   &trans &trans    &trans  &trans  &trans    &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
           >;
         };
