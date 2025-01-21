@@ -12,7 +12,7 @@
       lh_pht: left_positional_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "tap-unless-interrupted";
         tapping-term-ms = <280>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
@@ -29,7 +29,7 @@
       rh_pht: right_positional_hold_tap {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "tap-unless-interrupted";
         tapping-term-ms = <280>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
