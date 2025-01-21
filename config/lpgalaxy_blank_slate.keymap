@@ -66,7 +66,7 @@
             // 24          25         26         27          28           29       | 30            31          32          33         34            35
             &kp LSHFT      &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N         &kp M       &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RET
             // 36          37         38         39          40           41       | 42            43          44          45         46            47
-            &kp CAPS       &kp C_MUTE &kp C_PP   &kp LALT    &mo 1        &kp SPACE  &shft LSHFT 0 &mo 2       &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
+            &kp CAPS       &kp C_MUTE &kp C_PP   &kp LALT    &mo 1        &kp SPACE  &shft LSHFT 0 &lt 2 RET   &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
           >;
         };
 
