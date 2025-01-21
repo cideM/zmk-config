@@ -67,8 +67,8 @@
 
         lower {
           bindings = <
-            &kp LS(GRAVE) &kp LS(N1)      &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5) &kp LS(N6) &kp LS(N7)          &kp LS(N8)         &kp LS(N9)        &kp LS(N0)         &kp DEL
-            &kp DEL       &lh_pht LGUI F1 &lh_pht LALT F2  &lh_pht LCTRL F3 &lh_pht LSHFT F4 &kp F5     &kp F6     &rh_pht RSHFT UNDER &rh_pht RCTRL PLUS &rh_pht RALT LBRC &rh_pht RCTRL RBRC &kp PIPE    
+            &kp DEL       &kp LS(N1)      &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5) &kp LS(N6) &kp LS(N7)          &kp LS(N8)         &kp LS(N9)        &kp LS(N0)         &kp DEL
+            &kp LS(GRAVE) &lh_pht LGUI F1 &lh_pht LALT F2  &lh_pht LCTRL F3 &lh_pht LSHFT F4 &kp F5     &kp F6     &rh_pht RSHFT UNDER &rh_pht RCTRL PLUS &rh_pht RALT LBRC &rh_pht RCTRL RBRC &kp PIPE    
             &trans        &kp F7          &kp F8           &kp F9           &kp F10          &kp F11    &kp F12    &kp LBKT            &kp RBKT           &kp HOME          &kp END            &trans
             &trans        &trans          &trans           &trans           &trans           &trans     &trans     &trans              &kp C_NEXT         &kp C_VOL_DN      &kp C_VOL_UP       &kp C_PP
           >;
@@ -76,8 +76,8 @@
 
         raise {
           bindings = <
-              &kp GRAVE &kp N1            &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0             &caps_word
-              &kp DEL   &lh_pht LGUI LEFT &lh_pht LALT DOWN  &lh_pht LCTRL UP &lh_pht LSHFT RIGHT &kp F5  &kp F6  &rh_pht RSHFT MINUS &rh_pht RCTRL EQUAL &rh_pht RALT LBRC &rh_pht RCTRL RBKT &kp BSLH    
+              &kp DEL   &kp N1            &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0             &caps_word
+              &kp GRAVE &lh_pht LGUI LEFT &lh_pht LALT DOWN  &lh_pht LCTRL UP &lh_pht LSHFT RIGHT &kp F5  &kp F6  &rh_pht RSHFT MINUS &rh_pht RCTRL EQUAL &rh_pht RALT LBRC &rh_pht RCTRL RBKT &kp BSLH    
               &trans    &kp F7            &kp F8             &kp F9           &kp F10             &kp F11 &kp F12 &kp HASH            &kp BSLH            &kp PG_UP         &kp PG_DN          &trans
               &trans    &trans            &trans             &trans           &trans              &trans  &trans  &trans              &kp C_NEXT          &kp C_VOL_DN      &kp C_VOL_UP       &kp C_PP
           >;
