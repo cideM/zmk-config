@@ -76,10 +76,10 @@
 
         raise {
           bindings = <
-              &kp GRAVE &kp N1   &kp N2   &kp N3 &kp N4    &kp N5  &kp N6  &kp N7    &kp N8     &kp N9       &kp N0       &caps_word
-              &kp DEL   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F5  &kp F6  &kp MINUS &kp EQUAL  &kp LBKT     &kp RBKT     &kp BSLH
-              &trans    &kp SQT  &kp F8   &kp F9 &kp F10   &kp F11 &kp F12 &kp HASH  &kp BSLH   &kp PG_UP    &kp PG_DN    &trans
-              &trans    &trans   &trans   &trans &trans    &trans  &trans  &trans    &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+              &kp GRAVE &kp N1            &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0             &caps_word
+              &kp DEL   &lh_pht LGUI LEFT &lh_pht LALT DOWN  &lh_pht LCTRL UP &lh_pht LSHFT RIGHT &kp F5  &kp F6  &rh_pht RSHFT MINUS &rh_pht RCTRL EQUAL &rh_pht LBKT LBRC &rh_pht RCTRL RBKT &kp BSLH    
+              &trans    &kp SQT           &kp F8             &kp F9           &kp F10             &kp F11 &kp F12 &kp HASH            &kp BSLH            &kp PG_UP         &kp PG_DN          &trans
+              &trans    &trans            &trans             &trans           &trans              &trans  &trans  &trans              &kp C_NEXT          &kp C_VOL_DN      &kp C_VOL_UP       &kp C_PP
           >;
         };
 
