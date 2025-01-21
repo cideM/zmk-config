@@ -55,9 +55,9 @@
         default_layer {
           bindings = <
             // 0           1              2              3               4                5        | 6        7               8               9              10                11
-            &mt LALT ESC   &kp Q          &kp W          &kp E           &kp R            &kp T      &kp Y    &kp U           &kp I           &kp O          &kp P             &kp BSPC
+            &mt LALT  TAB  &kp Q          &kp W          &kp E           &kp R            &kp T      &kp Y    &kp U           &kp I           &kp O          &kp P             &kp BSPC
             // 12          13             14             15              16               17       | 18       19              20              21             22                23
-            &mt LCTRL TAB  &lh_pht LGUI A &lh_pht LALT S &lh_pht LCTRL D &lh_pht LSHIFT F &kp G      &kp H    &rh_pht RSHFT J &rh_pht RCTRL K &rh_pht RALT L &rh_pht RGUI SEMI &mt RCTRL SQT
+            &mt LCTRL ESC  &lh_pht LGUI A &lh_pht LALT S &lh_pht LCTRL D &lh_pht LSHIFT F &kp G      &kp H    &rh_pht RSHFT J &rh_pht RCTRL K &rh_pht RALT L &rh_pht RGUI SEMI &mt RCTRL SQT
             // 24          25             26             27              28               29       | 30       31              32              33             34                35
             &kp LSHFT      &kp Z          &kp X          &kp C           &kp V            &kp B      &kp N    &kp M           &kp COMMA       &kp DOT        &kp FSLH          &mt RSHFT RET
             // 36          37             38             39              40               41       | 42       43              44              45             46                47
@@ -67,8 +67,8 @@
 
         lower {
           bindings = <
-            &kp DEL       &kp LS(N1)      &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5) &kp LS(N6) &kp LS(N7)          &kp LS(N8)         &kp LS(N9)        &kp LS(N0)         &kp DEL
-            &kp LS(GRAVE) &lh_pht LGUI F1 &lh_pht LALT F2  &lh_pht LCTRL F3 &lh_pht LSHFT F4 &kp F5     &kp F6     &rh_pht RSHFT UNDER &rh_pht RCTRL PLUS &rh_pht RALT LBRC &rh_pht RCTRL RBRC &kp PIPE    
+            &kp LS(GRAVE) &kp LS(N1)      &kp LS(N2)       &kp LS(N3)       &kp LS(N4)       &kp LS(N5) &kp LS(N6) &kp LS(N7)          &kp LS(N8)         &kp LS(N9)        &kp LS(N0)         &kp DEL
+            &kp DEL       &lh_pht LGUI F1 &lh_pht LALT F2  &lh_pht LCTRL F3 &lh_pht LSHFT F4 &kp F5     &kp F6     &rh_pht RSHFT UNDER &rh_pht RCTRL PLUS &rh_pht RALT LBRC &rh_pht RCTRL RBRC &kp PIPE    
             &trans        &kp F7          &kp F8           &kp F9           &kp F10          &kp F11    &kp F12    &kp LBKT            &kp RBKT           &kp HOME          &kp END            &trans
             &trans        &trans          &trans           &trans           &trans           &trans     &trans     &trans              &kp C_NEXT         &kp C_VOL_DN      &kp C_VOL_UP       &kp C_PP
           >;
@@ -76,8 +76,8 @@
 
         raise {
           bindings = <
-              &kp DEL   &kp N1            &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0             &caps_word
-              &kp GRAVE &lh_pht LGUI LEFT &lh_pht LALT DOWN  &lh_pht LCTRL UP &lh_pht LSHFT RIGHT &kp F5  &kp F6  &rh_pht RSHFT MINUS &rh_pht RCTRL EQUAL &rh_pht RALT LBRC &rh_pht RCTRL RBKT &kp BSLH    
+              &kp GRAVE &kp N1            &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0             &caps_word
+              &kp DEL   &lh_pht LGUI LEFT &lh_pht LALT DOWN  &lh_pht LCTRL UP &lh_pht LSHFT RIGHT &kp F5  &kp F6  &rh_pht RSHFT MINUS &rh_pht RCTRL EQUAL &rh_pht RALT LBRC &rh_pht RCTRL RBKT &kp BSLH    
               &trans    &kp F7            &kp F8             &kp F9           &kp F10             &kp F11 &kp F12 &kp HASH            &kp BSLH            &kp PG_UP         &kp PG_DN          &trans
               &trans    &trans            &trans             &trans           &trans              &trans  &trans  &trans              &kp C_NEXT          &kp C_VOL_DN      &kp C_VOL_UP       &kp C_PP
           >;
