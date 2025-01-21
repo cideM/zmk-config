@@ -18,17 +18,17 @@
       // tap: sticky shift; double tap: caps_word
       td_shift: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_SHIFT";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&sk LSHFT>, <&caps_word>;
       };
         
       // hold: shift, tap: td_shift 
-      ht_shift: hold_tap {
+      // Why the need for a dummy parameter at the call site?
+      // https://github.com/zmkfirmware/zmk/issues/1643
+      shft: hold_tap {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_TAP_SHIFT";
-        #binding-cells = <1>;  // Changed to 1
+        #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <0>;
         flavor = "hold-preferred";
@@ -59,14 +59,14 @@
 
         default_layer {
           bindings = <
-            // 0           1          2          3           4            5        | 6               7           8           9          10            11
-            &mt LALT  TAB  &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y           &kp U       &kp I       &kp O      &kp P         &kp BSPC
-            // 12          13         14         15          16           17       | 18              19          20          21         22            23
-            &mt LCTRL ESC  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F  &kp G      &kp H           &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mt RCTRL SQT
-            // 24          25         26         27          28           29       | 30              31          32          33         34            35
-            &kp LSHFT      &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N           &kp M       &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RET
-            // 36          37         38         39          40           41       | 42              43          44          45         46            47
-            &kp CAPS       &kp C_MUTE &kp C_PP   &kp LALT    &mo 1        &kp SPACE  &ht_shift LSHFT &mo 2       &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
+            // 0           1          2          3           4            5        | 6             7           8           9          10            11
+            &mt LALT  TAB  &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y         &kp U       &kp I       &kp O      &kp P         &kp BSPC
+            // 12          13         14         15          16           17       | 18            19          20          21         22            23
+            &mt LCTRL ESC  &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F  &kp G      &kp H         &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &mt RCTRL SQT
+            // 24          25         26         27          28           29       | 30            31          32          33         34            35
+            &kp LSHFT      &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N         &kp M       &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RET
+            // 36          37         38         39          40           41       | 42            43          44          45         46            47
+            &kp CAPS       &kp C_MUTE &kp C_PP   &kp LALT    &mo 1        &kp SPACE  &shft LSHFT 0 &mo 2       &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
           >;
         };
 
