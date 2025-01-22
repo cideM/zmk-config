@@ -19,7 +19,7 @@
       td_shift: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <300>;
         bindings = <&sk LSHFT>, <&caps_word>;
       };
         
@@ -39,7 +39,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <200>;
+        tapping-term-ms = <250>;
         quick-tap-ms = <200>;
         bindings = <&kp>, <&kp>;
         require-prior-idle-ms = <100>;
