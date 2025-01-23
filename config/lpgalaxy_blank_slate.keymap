@@ -82,7 +82,7 @@
         raise {
           bindings = <
               &kp GRAVE &kp N1        &kp N2             &kp N3           &kp N4              &kp N5  &kp N6  &kp N7              &kp N8              &kp N9            &kp N0        &caps_word
-              &kp DEL   &hm LGUI LEFT &hm LALT DOWN      &hm LCTRL UP     &hm LSHFT RIGHT     &kp F5  &kp F6  &hm RSHFT MINUS     &hm RCTRL EQUAL     &hm RALT RBKT     &hm RGUI RBKT &kp BSLH    
+              &kp DEL   &hm LGUI LEFT &hm LALT DOWN      &hm LCTRL UP     &hm LSHFT RIGHT     &kp F5  &kp F6  &hm RSHFT MINUS     &hm RCTRL EQUAL     &hm RALT LBKT     &hm RGUI RBKT &kp BSLH    
               &trans    &kp F7        &kp F8             &kp F9           &kp F10             &kp F11 &kp F12 &kp HASH            &kp BSLH            &kp PG_UP         &kp PG_DN     &trans
               &trans    &trans        &trans             &trans           &trans              &trans  &trans  &trans              &kp C_NEXT          &kp C_VOL_DN      &kp C_VOL_UP  &kp C_PP
           >;
