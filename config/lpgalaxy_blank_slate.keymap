@@ -21,7 +21,7 @@
         tapping-term-ms = <300>;
         quick-tap-ms = <200>;
         flavor = "tap-unless-interrupted";
-        bindings = <&kp>, <&kp>;
+        bindings = <&mo>, <&kp>;
       };
 
       // tap: sticky shift; double tap: caps_word
