@@ -3,4 +3,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Keep in sync with the ZMK revision in config/west.yml (v0.3, required by
+    # the Blank Slate board). The @main workflow has checks for Zephyr 4.1
+    # boards that crash on v0.3.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
